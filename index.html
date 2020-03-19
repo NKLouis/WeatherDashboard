@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <title>Weather Dashboard</title>
+  <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+</head>
+
+<body>
+
+  <form id="city-form">
+    <p id="currentDay" class="lead"></p>
+    <label for="city-input"> Search for a city</label>
+    <input type="text" id="city-input">
+    <input id="find-city" type="submit" value="City Search">
+  </form>
+  <div id="city-view">
+    <h1>Weather Dashboard</h1>
+  </div>
+  <div class="city-name"></div>
+  <div class="date"></div>
+  <div class="icon"></div>
+  <div class="humidity"></div>
+  <div class="temp"></div>
+  <div class="wind-speed"></div>
+  <div class="UV-index"></div>
+
+
+
+  <div id="city-view5Days">
+    <div id="5Days"><h1>5-Days Forcast</h1></div>
+    
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="assets/app2.js"></script>
+  <script src="assets/app.js"></script> 
+</body>
+
+</html>

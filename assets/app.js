@@ -1,5 +1,4 @@
-//Today waether
-
+//Current weather
 $('#find-city').on('click', function (event) {
   event.preventDefault()
   var cityName = $('#city-input').val();
@@ -26,7 +25,7 @@ $('#find-city').on('click', function (event) {
       var year = moment().format("YYYY");
       console.log(date);
 
-      $(".city-name").text(response.name + ' (' + month + '/' + date + '/' + year + ') ');
+      $(".city-name").text( response.name + ' (' + month + '/' + date + '/' + year + ') ');
       //$("date").text("Date :" + todayDate);
       $(".icon").text("Icon :" + response.weather[0].icon);
       $(".wind-speed").text("Wind-speed :" + response.wind.speed);
@@ -54,7 +53,14 @@ $('#find-city').on('click', function (event) {
 
         });
 
+
     });
+
+
+    
+
+
+
 
 });
 
